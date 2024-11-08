@@ -21,11 +21,6 @@ public class Main {
             arr[i] = Integer.parseInt(s[i]);
         }
         Arrays.sort(arr);
-        solve();
-        System.out.println(result);
-    }
- 
-    public static void solve() {
         for (int i = 1; i < n; i++) {
             list.add(arr[i] - arr[i - 1]);
         }
@@ -35,6 +30,7 @@ public class Main {
         for (int i = 0; i < n - k; i++) {
             result+=list.get(i);
         }
+        System.out.println(result);
     }
 }
  
